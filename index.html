@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Pocket Reads</title>
+		<title>Find Me</title>
     <meta charset="UTF-8">
 		<script type="text/javascript" src="js/ICanHaz.js"></script> 
 		<script type="text/javascript" src='js/jquery.js '></script>
@@ -16,14 +16,14 @@
 	<div id="wrapper">
 		<div id="title"></div>
 		<ul class="nav">
-			<li>ARTICLES READ AND ARCHIVED</li>
+			<!--<li>ARTICLES READ AND ARCHIVED</li>
 			<li>POWERED BY <a href="http://jlord.gitub.io/sheetsee.js" target="_blank">SHEETSEE.JS</a> AND <a href="http://www.ifttt.com" target="blank">IFTTT.COM</a> (AND <a href="http://www.getpocket.com/" target="_blank">POCKET</a>)</li>
       <li><a class="dim" href="#info" target="_blank">INFO</a><span class="dim"> or</span></li>
-			<li><a class="dim" href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">SET UP YOUR ARCHIVE</a></li>
+			<li><a class="dim" href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">SET UP YOUR ARCHIVE</a></li>-->
 		</ul>
 
 		<div id="filters" class="container">
-			<input id="articleSearch" type="text" placeholder="Search for.."></input>
+			<input id="articleSearch" type="text" placeholder="Search by name.."></input>
 			<span class="clear sml-button">Clear</span> 
       <h3>Tags <span id="tags"></span>   
     </div>
@@ -37,7 +37,7 @@
 	</div><!-- end wrapper -->
 
 	<script id="title" type="text/html">
-		<h1><span class="highlighted">{{numArticles}}</span> Articles from Pocket</h1>
+		<h1><span class="highlighted">{{numArticles}}</span> عدد الضحايا</h1>
 	</script>
 
   <script id="tags" type="text/html">
@@ -48,7 +48,7 @@
 
 	<script id="articleTable" type="text/html">
 		<table>
-			<tr><th class="fancy">&#8470;</th><th class="date">Date</th><th class="">Article</th><th>Tags</th></tr>
+			<tr><th class="fancy">&#8470;</th><th class="date">Date/التاريخ</th><th class="">Name/الإسم</th><th>Hospital/المستشفى</th></tr>
 		  {{#rows}}
 		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
 		  	<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td></tr>
@@ -58,7 +58,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var URL = "0Ao5u1U6KYND7dERheVpFZThEUkdPZnFXXzMxTzJ3dEE"
+      var URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmxkYhGsYd8OBveHiWDjOV09qpJJhmsk2XDmB0uqm7KMYRuEPgpTuS-gpeplpHnGQMmitOXMVcg-AA/pubhtml"
       Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
     }) 
       
