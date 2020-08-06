@@ -1,4 +1,4 @@
-# Hi!
+<!-- # Hi!
 
 ![screenshot](https://raw.github.com/jlord/sheetsee-pocket/gh-pages/ss-pocket-ss.png)
 
@@ -54,3 +54,4 @@ Scroll to find **line 61** (or thereabouts), it looks like:
 Paste your spreadsheet's key in the place of `0Ao5u1U6K...`
 
 **At the bottom of the page, click Commit. You're done! Visit your site!**
+ -->
