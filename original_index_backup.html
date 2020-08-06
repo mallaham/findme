@@ -1,49 +1,45 @@
 <html>
-  <head>
-    <title>Find Me</title>
+	<head>
+		<title>Find Me</title>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="js/ICanHaz.js"></script> 
-    <script type="text/javascript" src='js/jquery.js '></script>
+		<script type="text/javascript" src="js/ICanHaz.js"></script> 
+		<script type="text/javascript" src='js/jquery.js '></script>
     <script type="text/javascript" src='js/tabletop.js'></script>
     <script type="text/javascript" src='js/site.js'></script>
-    <script type="text/javascript" src='js/sheetsee.js'></script>
+		<script type="text/javascript" src='js/sheetsee.js'></script>
     
-    <link rel="shortcut icon" href="https://raw.github.com/jlord/sheetsee-pocket/master/favicon-p.png"/>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link media="screen" rel="stylesheet" type="text/css" href="css/style.css"> 
-  </head>
+		<link rel="shortcut icon" href="https://raw.github.com/jlord/sheetsee-pocket/master/favicon-p.png"/>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link media="screen" rel="stylesheet" type="text/css" href="css/style.css"> 
+	</head>
 <body>
-  <div id="wrapper">
-    <div id="title"></div>
-    <ul class="nav">
-      <!--<li>ARTICLES READ AND ARCHIVED</li>
-      <li>POWERED BY <a href="http://jlord.gitub.io/sheetsee.js" target="_blank">SHEETSEE.JS</a> AND <a href="http://www.ifttt.com" target="blank">IFTTT.COM</a> (AND <a href="http://www.getpocket.com/" target="_blank">POCKET</a>)</li>
+	<div id="wrapper">
+		<div id="title"></div>
+		<ul class="nav">
+			<!--<li>ARTICLES READ AND ARCHIVED</li>
+			<li>POWERED BY <a href="http://jlord.gitub.io/sheetsee.js" target="_blank">SHEETSEE.JS</a> AND <a href="http://www.ifttt.com" target="blank">IFTTT.COM</a> (AND <a href="http://www.getpocket.com/" target="_blank">POCKET</a>)</li>
       <li><a class="dim" href="#info" target="_blank">INFO</a><span class="dim"> or</span></li>
-      <li><a class="dim" href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">SET UP YOUR ARCHIVE</a></li>-->
-    </ul>
+			<li><a class="dim" href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">SET UP YOUR ARCHIVE</a></li>-->
+		</ul>
 
-    <div id="filters" class="container" align=center>
-      <input id="articleSearch" type="text" placeholder="Search by name.."></input>
-      <span class="clear sml-button">Clear</span> 
+		<div id="filters" class="container" align=center>
+			<input id="articleSearch" type="text" placeholder="Search by name.."></input>
+			<span class="clear sml-button">Clear</span> 
       <h3>Tags <span id="tags"></span>   
     </div>
 
-    <div id="articleTable"></div>
+		<div id="articleTable"></div>
 
     <div id="info" align=center>
       <h2>NOTE / ملاحظة</h2>
       <p>The purpose of this page is to help the families of the victims to locate their relatives and beloved ones very quickly. It is highly recommended for doctors, nurses, and first responders to share their data through publishing the names of the victims receiving medical treatment at their hospitals or field clinics through this page. <b>To have access to this website to enter your data or share the name of a missing family member, please reachout to: <a href = "mailto: helpbeirut0408@gmail.com">helpbeirut0408@gmail.com</a><b>  </p>
       <align=right><p>اﻟﻐﺮﺽ ﻣﻦ ﻫﺬﻩ اﻟﺼﻔﺤﺔ ﻫﻮ ﻣﺴﺎﻋﺪﺓ ﺃﺳﺮ اﻟﻀﺤﺎﻳﺎ ﻋﻠﻰ ﺗﺤﺪﻳﺪ ﻣﻜﺎﻥ ﺃﻗﺎﺭﺑﻬﻢ ﻭﺃﺣﺒﺎﺋﻬﻢ ﺑﺴﺮﻋﺔ ﻛﺒﻴﺮﺓ. ﻳﻮﺻﻰ ﺑﺸﺪﺓ ﻟﻷﻃﺒﺎء ﻭاﻟﻤﻤﺮﺿﺎﺕ ﻭ ﻓﺮﻕ اﻻﻧﻘﺎﺫ ﺑﻤﺸﺎﺭﻛﺔ ﺑﻴﺎﻧﺎﺗﻬﻢ ﻣﻦ ﺧﻼﻝ ﻧﺸﺮ ﺃﺳﻤﺎء اﻟﻀﺤﺎﻳﺎ اﻟﺬﻳﻦ ﻳﺘﻠﻘﻮﻥ اﻟﻌﻼﺝ اﻟﻄﺒﻲ ﻓﻲ ﻣﺴﺘﺸﻔﻴﺎﺗﻬﻢ ﺃﻭ اﻟﻌﻴﺎﺩاﺕ اﻟﻤﻴﺪاﻧﻴﺔ ﻣﻦ ﺧﻼﻝ ﻫﺬﻩ اﻟﺼﻔﺤﺔ. ﻟﻠﻮﺻﻮﻝ ﺇﻟﻰ ﻫﺬا اﻟﻤﻮﻗﻊ ﻹﺩﺧﺎﻝ ﺑﻴﺎﻧﺎﺗﻚ ﺃﻭ ﻣﺸﺎﺭﻛﺔ اﺳﻢ ﺃﺣﺪ ﺃﻓﺮاﺩ اﻟﻌﺎﺋﻠﺔ اﻟﻤﻔﻘﻮﺩﻳﻦ ، ﻳﺮﺟﻰ اﻟﺘﻮاﺻﻞ ﻣﻊ: <br><a href = "mailto: helpbeirut0408@gmail.com">helpbeirut0408@gmail.com</a> </p></align=right>
     </div>
-  </div><!-- end wrapper -->
+	</div><!-- end wrapper -->
 
-  <script id="title" type="text/html">
-    <center><h1><span class="highlighted">{{numArticles}}</span> عدد الضحايا و المفقودين المسجلين في الموقع</h1>
-      To submit the information of a missing individual, please fill this form: <b><a href= "https://forms.gle/TFzvqdUsjqCmazX27">https://forms.gle/TFzvqdUsjqCmazX27</a></b>
-      <br></br>
-      <b><a href= "https://forms.gle/TFzvqdUsjqCmazX27">https://forms.gle/TFzvqdUsjqCmazX27</a></b> :لتقديم معلومات عن شخص مفقود ، يرجى ملء هذا النموذج
-    </center>
-  </script>
+	<script id="title" type="text/html">
+		<center><h1><span class="highlighted">{{numArticles}}</span> عدد الضحايا و المفقودين المسجلين في الموقع</h1></center>
+	</script>
 
   <script id="tags" type="text/html">
     {{#rows}}
@@ -51,21 +47,15 @@
     {{/rows}}
   </script>
 
-  <script id="articleTable" type="text/html">
-    <table>
-      <tr><th class="fancy">&#8470;</th><th class="date">Date/التاريخ</th><th class="">Name/الإسم</th>
-        <th class="first">First Name/ الإسم الأول </th><th class="father">Father's Name/ إسم الأب</th><th class="mother">Mother's Name/ إسم الإم</th><th class="last">Last Name/ العائله </th><th>Hospital/المستشفى</th><th>Mobile/ موبايل</th></tr>
-      {{#rows}}
-      <tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
-      <td class="first">{{first}}</td>
-      <td class="father">{{father}}</td>
-      <td class="mother">{{mother}}</td>
-      <td class="last">{{last}}</td>
-      <td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}
-      </td><td class="mobile">{{mobile}}</td></tr>
-      {{/rows}}
-    </table>
-  </script>
+	<script id="articleTable" type="text/html">
+		<table>
+			<tr><th class="fancy">&#8470;</th><th class="date">Date/التاريخ</th><th class="">Name/الإسم</th><th>Hospital/المستشفى</th></tr>
+		  {{#rows}}
+		  <tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
+		  <td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td></tr>
+		  {{/rows}}
+	  </table>
+	</script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
