@@ -65,16 +65,18 @@
 
   <script id="articleTable" type="text/html">
     <table>
-      <tr><th class="fancy">&#8470;</th><th class="date">Date/التاريخ</th><th class="">Name/الإسم</th>
-        <th class="first">First Name/ الإسم الأول </th><th class="father">Father's Name/ إسم الأب</th><th class="mother">Mother's Name/ إسم الإم</th><th class="last">Last Name/ العائله </th><th>Hospital/المستشفى</th><th>Mobile/ موبايل</th></tr>
+      <tr><th class="fancy">&#8470;</th><th class="">Name/الإسم</th>
+        <th class="first">First Name/ الإسم الأول </th><th class="father">Father's Name/ إسم الأب</th><th class="mother">Mother's Name/ إسم الإم</th><th class="last">Last Name/ العائله </th><th>Hospital/المستشفى</th><th>Mobile/ موبايل</th>
+        <th class="notes">Notes/ ملاحطة</th></tr>
       {{#rows}}
-      <tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
+      <tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
       <td class="first">{{first}}</td>
       <td class="father">{{father}}</td>
       <td class="mother">{{mother}}</td>
       <td class="last">{{last}}</td>
-      <td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}
-      </td><td class="mobile">{{mobile}}</td></tr>
+      <td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td>
+      <td class="mobile">{{mobile}}</td>
+      </td><td class="notes">{{notes}}</td></tr>
       {{/rows}}
     </table>
   </script>
