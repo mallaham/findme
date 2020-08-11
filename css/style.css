@@ -1,4 +1,7 @@
-body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; color: #333;}
+p {overflow-wrap: break-word;word-wrap: break-word; display:block;
+    width:900px; font-size:10px;}
+
+body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; color: #000000;}
 
 h1 {font-size: 48px; margin-bottom: 20px;}
 .highlighted {color: #06DDA0; opacity: 1; transition: opacity .25s ease-in-out;}
@@ -11,7 +14,7 @@ p a {color: #06DDA0;}
 .dim {color: #acacac;}
 .fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
 
-#wrapper {margin: 0px auto; max-width: 900px; padding-top: 40px; }
+#wrapper {margin: 0px auto; max-width: 900px; padding-top: 0; }
 
 ul.nav {list-style: none; margin: 0px; padding: 0px; color: #06DDA0;}
 ul.nav li {display: inline; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; padding-right: 4px;}
@@ -22,10 +25,11 @@ ul.nav a:hover {font-weight: 900;}
 #filters {padding: 30px 0px; overflow: auto;}
 #tags {line-height: 25px;}
 
-table {border-spacing: 0px; min-width: 900px; margin: 0 auto;}
+table {border-spacing: 0px; min-width: 900px; margin: 0 auto; overflow-wrap: break-word;
+  word-wrap: break-word;}
 th {padding: 10px}
 td, text {padding: 5px 10px; font-size: 12px; font-weight: lighter; line-height: 18px;}
-td.article a:visited {color: #777;}
+td.article a:visited {color: #000000;}
 td.date {min-width: 119px;}
 tr {text-align: left; vertical-align: top; padding: 4px 0px;}
 tr:nth-child(2n+2) {background: #eee;}
@@ -38,5 +42,5 @@ input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background
 .sml-button:hover {background: #eee;}
 .button-pressed {background: #0CCC96;}
 
-#info {padding: 30px 0px;}
+#info {padding: auto;}
 
